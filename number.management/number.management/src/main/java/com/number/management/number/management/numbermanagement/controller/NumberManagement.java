@@ -48,5 +48,22 @@ public class NumberManagement {
        	} 
                return listOfOdd.toString();
            	}
+           
+           @RequestMapping("/fibnumbers")
+          	public String fibnumbers() {
+          		ArrayList<Integer> listOfFibonacci= new ArrayList<Integer>();
+          		int N = 10;
+          		int a=0;
+          		int b =1,c;
+          		listOfFibonacci.add(a);
+          		listOfFibonacci.add(b);
+                  for(int i=1; i<=N; i++){
+                    	c=a+b;
+                    	a=b;
+                    	b=c;
+                      	listOfFibonacci.add(c);
+                          }       
+                  return listOfFibonacci.toString();
+              	}
 
 }
