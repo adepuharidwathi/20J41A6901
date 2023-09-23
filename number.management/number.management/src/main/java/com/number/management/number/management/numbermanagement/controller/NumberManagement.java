@@ -65,5 +65,10 @@ public class NumberManagement {
                           }       
                   return listOfFibonacci.toString();
               	}
+           
+           @RequestMapping("/randnumbers")
+         	public double Randnumbers() {
+                 return Math.random();
+             	}
 
 }
